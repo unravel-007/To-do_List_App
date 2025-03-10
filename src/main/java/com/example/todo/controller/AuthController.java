@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
-
+//updating the signup
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
