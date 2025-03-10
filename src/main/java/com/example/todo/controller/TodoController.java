@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+//to do 
 @RestController
 @RequestMapping("/todo")
 public class TodoController {
@@ -21,6 +22,7 @@ public class TodoController {
         this.userRepository = userRepository;
     }
 
+    //add
     @PostMapping("/add")
     public ResponseEntity<?> addTodo(@RequestHeader("Authorization") String token, @RequestBody Todo todo) {
         System.out.println("Received Token: " + token);
@@ -49,7 +51,7 @@ public class TodoController {
 
         return ResponseEntity.ok("TODO added successfully");
     }
-
+//mine
     @GetMapping("/mine")
     public ResponseEntity<?> viewMyTodos(@RequestHeader("Authorization") String token) {
         System.out.println("Received Token: " + token);
@@ -69,7 +71,7 @@ public class TodoController {
         return ResponseEntity.ok(todos);
     }
 
-
+//all
     @GetMapping("/all")
     public ResponseEntity<List<Todo>> viewAllTodos() {
         List<Todo> todos = todoRepository.findAll();
