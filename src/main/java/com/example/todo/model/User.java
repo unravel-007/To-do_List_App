@@ -1,3 +1,4 @@
+//User Model File
 package com.example.todo.model;
 
 import jakarta.persistence.*;
