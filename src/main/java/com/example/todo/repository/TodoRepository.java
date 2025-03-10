@@ -1,4 +1,4 @@
-// to-do repository file
+//repository file(to-do)
 package com.example.todo.repository;
 
 import com.example.todo.model.Todo;
