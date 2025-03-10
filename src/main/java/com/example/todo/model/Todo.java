@@ -1,3 +1,5 @@
+//Model file for Todo List
+
 package com.example.todo.model;
 
 import jakarta.persistence.*;
